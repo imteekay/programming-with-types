@@ -23,3 +23,9 @@ Making `x` a constant, we get a compilation error when we try to mutate it in th
 ### Encapsulation
 
 Encapsulation is the ability to hide some of the internals of our code. Encapsulation appears at multiple layers: a service exposes its API as an interface, a module exports its interface and hides implementation details, a class exposes only its public members, and so on.
+
+### Composable
+
+Having the ability to combine independent components yields a modular system and less code to maintain. In a composable system, the parts are loosely cou- pled; at the same time, code does not get duplicated in each subsystem.
+
+Generic types enable us to express these kinds of abstractions.
