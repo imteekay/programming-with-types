@@ -17,3 +17,5 @@ The main benefits of typing are correctness, immutability, encapsulation, compos
 Correct code means code that behaves according to its specification, producing expected results without creating run-time errors or crashes.
 
 ### Immutability
+
+Making x a constant, we get a compilation error when we try to mutate it in the next listing.
