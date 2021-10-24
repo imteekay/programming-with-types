@@ -18,4 +18,8 @@ Correct code means code that behaves according to its specification, producing e
 
 ### Immutability
 
-Making x a constant, we get a compilation error when we try to mutate it in the next listing.
+Making `x` a constant, we get a compilation error when we try to mutate it in the next listing.
+
+### Encapsulation
+
+Encapsulation is the ability to hide some of the internals of our code. Encapsulation appears at multiple layers: a service exposes its API as an interface, a module exports its interface and hides implementation details, a class exposes only its public members, and so on.
