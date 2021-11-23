@@ -32,8 +32,24 @@ function readConfig(configFile: string): string {
 }
 ```
 
+([source code](./never.ts))
+
 The `raise` function will not return anything. If anyone changes the function to return anything, it won't compile as it's still expect to not return anything.
 
 Consider using an empty type whenever you have a nonreturning function or other- wise want to explicitly show that it’s impossible to have a value.
 
 A function that doesn't explicitly return a value implicitly returns the value undefined in JavaScript. We usually ignore the return value in these cases. Such a function is inferred to have a void return type in TypeScript.
+
+### The unit type
+
+Functions that we call only for the side-effect like the `console.log`. It performs a log on the debugger and it doesn't return a meaningful value. But it returns a type, so it can't be a `never` type. We use `void` in these cases.
+
+```typescript
+function greeting() {
+  console.log('Hello!');
+}
+
+greet();
+```
+
+([source code](./void.ts))
