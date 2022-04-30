@@ -52,4 +52,8 @@ function greeting() {
 greeting();
 ```
 
+## Boolean logic and short circuits
+
+Boolean values encode truthiness.
+
 ([source code](./void.ts))
